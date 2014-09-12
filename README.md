@@ -12,6 +12,3 @@ Clase 12 de septiembre 2014
 modelado de datos con Mysql Workbench
 
 Consulta de base de datos con HeidySql
-
-
-
