@@ -15,4 +15,4 @@ Consulta de base de datos con HeidySql
 
 Clase 15 de septiembre  2014
 
-Bases de datos y Codeigniter
+##Bases de datos y Codeigniter
