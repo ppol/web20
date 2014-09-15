@@ -19,7 +19,18 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+	
+	#	echo "Hola mundo!";
 		$this->load->view('welcome_message');
+	}
+
+	public function provincias()
+	{
+		$this->load->model('provincia_model');
+		$data = array();
+		$data['provincias'] = $this->provincia_model->listado();
+		print_r($data);
+		$this->load->view('provincias', $data);
 	}
 }
 
