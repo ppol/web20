@@ -12,6 +12,8 @@ Ya vamos por la tercera clase y seguimos probando.... probando...
 * modelado de datos con Mysql Workbench
 * Consulta de base de datos con HeidySql
 
-###Clase 15 de septiembre  2014
+###Clase 15 de septiembre 2014
 
 ##Bases de datos y Codeigniter
+
+###Clase 26 de septiembre 2014
