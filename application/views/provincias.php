@@ -69,8 +69,8 @@
 		<div id="body">
 			<h1><?php echo $titulo; ?></h1>
 			<?php 
-			foreach($provincias as $provincia){
-				echo "<p>".$provincia['nombre']."</p>";
+			foreach($provincias as $key => $provincia){
+				echo "<p><strong>".$key.":</strong> ".$provincia['nombre']."</p>";
 			}
 			?>
 			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>
