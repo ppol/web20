@@ -29,7 +29,8 @@ class Welcome extends CI_Controller {
 		$this->load->model('provincia_model');
 		$data = array();
 		$data['provincias'] = $this->provincia_model->listado();
-		print_r($data);
+		$data['titulo'] = 'Listado de provincias';
+		//print_r($data);
 		$this->load->view('provincias', $data);
 	}
 }
