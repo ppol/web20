@@ -17,3 +17,8 @@ Ya vamos por la tercera clase y seguimos probando.... probando...
 ##Bases de datos y Codeigniter
 
 ###Clase 26 de septiembre 2014
+
+* Modelo vista controlador
+* Codeigniter
+
+###Clase 3 de octubre 2014
