@@ -1,7 +1,7 @@
 <?php
-class provincia_model extends CI_Model {
+class direccion_model extends CI_Model {
 
-	private $tabla = 'provincia';
+	private $tabla = 'direccion';
 
 	public function get($id, $idName = null){
 		
