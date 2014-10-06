@@ -22,3 +22,5 @@ Ya vamos por la tercera clase y seguimos probando.... probando...
 * Codeigniter
 
 ###Clase 3 de octubre 2014
+
+###Clase 6 de octubre 2014
