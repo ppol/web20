@@ -23,4 +23,6 @@ Ya vamos por la tercera clase y seguimos probando.... probando...
 
 ###Clase 3 de octubre 2014
 
+Modelo-Vista-Controlador con Codeigniter
+
 ###Clase 6 de octubre 2014
