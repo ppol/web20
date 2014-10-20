@@ -15,7 +15,7 @@
 | path to your installation.
 |
  */
-$config['base_url'] = '/curso_web2.0';
+$config['base_url'] = '/web20';
 
 /*
 |--------------------------------------------------------------------------
