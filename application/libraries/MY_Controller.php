@@ -1,5 +1,6 @@
 <?php
-class MY_Controller extends CI_Controller{
+
+class MY_Controller extends Controller {
 
 	public function __construct() {
 		parent::__construct();
@@ -10,3 +11,5 @@ class MY_Controller extends CI_Controller{
 	}
 
 }
+
+#$a = new MY_Controller('angel');
