@@ -14,8 +14,19 @@ foreach ($provincias as $provincia) {
 	<tr>
 		<td><?php echo $provincia['id']?></td>
 		<td><?php echo $provincia['nombre']?></td>
-		<td><a href="<?php echo base_url().'admin/provincia/editar/'.$provincia['id']?>" class="btn btn-danger">Editar</a></td>
+		<td class="text-right">
+			<a href="<?php echo base_url().'admin/provincia/editar/'.$provincia['id']?>" class="btn btn-sm btn-info">Editar</a>
+			<button value="<?php echo $provincia['id']?>" class="eliminar btn btn-sm btn-danger">Eliminar</button>
+		</td>
 	</tr>
 <?php } ?>
 </table>
+<script>
+$(document).ready(function(){
+	function eliminar(){
+		alert('Estás seguro de eliminar: ' + $(this).val() + '?');
+	}
+	$(".eliminar").click(eliminar);
+});
+</script>
 <?php $this->load->view('layout/footer');
