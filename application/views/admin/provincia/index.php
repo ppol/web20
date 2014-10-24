@@ -24,7 +24,11 @@ foreach ($provincias as $provincia) {
 <script>
 $(document).ready(function(){
 	function eliminar(){
-		alert('Estás seguro de eliminar: ' + $(this).val() + '?');
+		
+		var elimina = confirm('Estás seguro de eliminar: ' + $(this).val() + '?');
+		if(elimina){
+			alert('registro eliminado!');
+		}
 	}
 	$(".eliminar").click(eliminar);
 });
