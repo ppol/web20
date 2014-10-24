@@ -30,3 +30,5 @@ Modelo-Vista-Controlador con Codeigniter
 ###Clase 20 de octubre 2014
 -> Libro gratuito Fundamentos de Jquery: http://librojquery.com/
 -> PHP Orientación a Objetos -> http://php.net/manual/es/oop5.intro.php
+
+###Clase 24 de octubre 2014

@@ -15,8 +15,8 @@ class Provincia extends MY_Controller {
 		$provincia = $this->input->post('provincia');
 		$data = ['accion' => 'Agregar'];
 		if($provincia){
-			$data['nombre'] = $provincia;
-			$this->provincia_model->agregar($data);
+			$reg = ['nombre' => $provincia];
+			$this->provincia_model->agregar($reg);
 			redirect('admin/provincia/index');
 			exit;
 		} else {
@@ -26,7 +26,7 @@ class Provincia extends MY_Controller {
 
 	public function editar($id=null) {
 		$provincia = $this->input->post('provincia');
-		$data = ['accion' => 'Editar'];
+		$data = ['accion' => 'Editar', 'id' => $id];
 		if($id){
 			$data['reg'] = $this->provincia_model->get($id);
 		}
@@ -34,8 +34,8 @@ class Provincia extends MY_Controller {
 			redirect('admin/provincia/index');
 		}
 		if($provincia and $id){
-			$data['nombre'] = $provincia;
-			$this->provincia_model->guardar($data,$id);
+			$reg = ['nombre' => $provincia];
+			$this->provincia_model->actualizar($id, $reg);
 			redirect('admin/provincia/index');
 			exit;
 		} else {
