@@ -27,7 +27,10 @@ $(document).ready(function(){
 		
 		var elimina = confirm('Estás seguro de eliminar: ' + $(this).val() + '?');
 		if(elimina){
-			alert('registro eliminado!');
+			//alert('registro eliminado!');
+			$.post("ajax/test.html", function(data){
+				$(".result").html(data);
+			})
 		}
 	}
 	$(".eliminar").click(eliminar);

@@ -32,3 +32,5 @@ Modelo-Vista-Controlador con Codeigniter
 -> PHP Orientación a Objetos -> http://php.net/manual/es/oop5.intro.php
 
 ###Clase 24 de octubre 2014
+
+Agregar con jquery elimniar, tocar y crear "Eliminar" en el controlador "Provincia"
