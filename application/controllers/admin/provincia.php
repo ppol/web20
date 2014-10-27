@@ -5,9 +5,11 @@ class Provincia extends MY_Controller {
 	public $modelo = "provincia_model";
 
 	public function index() {
+		$filtro				= $this->input->post('filtro');
 		$data               = array();
-		$data['provincias'] = $this->provincia_model->getList();
+		$data['provincias'] = $this->provincia_model->getList($filtro);
 		$data['titulo']     = "Listado de provincias";
+		$data['filtro']		= $filtro;
 		$this->load->view('admin/provincia/index', $data);
 	}
 
