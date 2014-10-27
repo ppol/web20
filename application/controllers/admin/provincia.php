@@ -42,4 +42,16 @@ class Provincia extends MY_Controller {
 			$this->load->view('admin/provincia/formulario',$data);
 		}
 	}
+
+	public function eliminar($id=null) {
+		if($id){
+			$data['reg'] = $this->provincia_model->get($id);
+		}
+		if(empty($data['reg'])){
+			echo 0;
+		} else {
+			$this->provincia_model->borrar($id);
+			echo 1;
+		}
+	}
 }

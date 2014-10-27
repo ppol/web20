@@ -8,9 +8,7 @@
 		<th>Nombre</th>
 		<th></th>
 	</tr>
-<?php
-foreach ($provincias as $provincia) {
-?>
+<?php foreach ($provincias as $provincia) { ?>
 	<tr>
 		<td><?php echo $provincia['id']?></td>
 		<td><?php echo $provincia['nombre']?></td>
@@ -24,13 +22,15 @@ foreach ($provincias as $provincia) {
 <script>
 $(document).ready(function(){
 	function eliminar(){
-		
 		var elimina = confirm('Estás seguro de eliminar: ' + $(this).val() + '?');
 		if(elimina){
 			//alert('registro eliminado!');
-			$.post("ajax/test.html", function(data){
-				$(".result").html(data);
-			})
+			$.post("<?php echo base_url()?>admin/provincia/eliminar/" + $(this).val(), function(data){
+				//alert(data)
+				if(data==1){
+					$(location).attr('href','<?php echo base_url()?>admin/provincia/index');
+				}
+			});
 		}
 	}
 	$(".eliminar").click(eliminar);
