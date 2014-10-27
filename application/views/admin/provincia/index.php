@@ -2,6 +2,10 @@
 
 <h1><?php echo $titulo?></h1>
 <p><a href="<?php echo base_url()?>admin/provincia/agregar" class="btn btn-primary">Agregar</a></p>
+<form method="post" accept-charset="utf-8">
+	<input type="text" name="filtro" value="<?php echo $filtro; ?>">
+	<input type="submit" name="Buscar">
+</form>
 <table class="table table-bordered table-striped">
 	<tr>
 		<th>ID</th>

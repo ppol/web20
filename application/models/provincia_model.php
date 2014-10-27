@@ -16,8 +16,11 @@ class provincia_model extends CI_Model {
 		#return $q->result_array();
 	}
 
-	public function getList() {
+	public function getList($filtro='') {
 		$this->db->from($this->tabla);
+		if(!empty($filtro)){
+			$this->db->like('nombre',$filtro);
+		}
 		$q = $this->db->get();
 		return $q->result_array();
 	}
