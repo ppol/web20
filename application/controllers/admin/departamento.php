@@ -15,6 +15,7 @@ class Departamento extends MY_Controller {
 
 	public function agregar() {
 		$departamento = $this->input->post('departamento');
+		
 		$data = ['accion' => 'Agregar'];
 		if($departamento){
 			$reg = ['nombre' => $departamento];
@@ -22,6 +23,8 @@ class Departamento extends MY_Controller {
 			redirect('admin/departamento/index');
 			exit;
 		} else {
+			$this->load->model('provincia_model');
+			$data['provincias'] = $this->provincia_model->getList();
 			$this->load->view('admin/departamento/formulario',$data);
 		}
 	}
