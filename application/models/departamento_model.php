@@ -16,9 +16,26 @@ class departamento_model extends CI_Model {
 		#return $q->result_array();
 	}
 
-	public function getList() {
+	public function getList($filtro='') {
 		$this->db->from($this->tabla);
+		if(!empty($filtro)){
+			$this->db->like('nombre',$filtro);
+		}
 		$q = $this->db->get();
 		return $q->result_array();
+	}
+
+	public function agregar($data = array()){
+		$this->db->insert($this->tabla, $data);
+	}
+
+	public function actualizar($id, $data = array()){
+		$this->db->where('id',$id);
+		$this->db->update($this->tabla, $data);
+	}
+
+	public function borrar($id){
+		$this->db->where('id',$id);
+		$this->db->delete($this->tabla);
 	}
 }

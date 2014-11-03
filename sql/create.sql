@@ -11,9 +11,9 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Volcando estructura de base de datos para cursoweb2
-DROP DATABASE IF EXISTS `cursoweb2`;
-CREATE DATABASE IF NOT EXISTS `cursoweb2` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `cursoweb2`;
+DROP DATABASE IF EXISTS `mibasededatos`;
+CREATE DATABASE IF NOT EXISTS `mibasededatos` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `mibasededatos`;
 
 
 -- Volcando estructura para tabla cursoweb2.departamento

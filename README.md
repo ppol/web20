@@ -39,3 +39,7 @@ Ya vamos por la tercera clase y seguimos probando.... probando...
 ###Clase 27 de octubre 2014
 
 * Trabajamos con jquery - ajax en el controlador "Provincia"
+
+###2 de noviembre
+
+* Trabajo práctico
